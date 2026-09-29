@@ -1,0 +1,23 @@
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav>
+      <Link to="/">
+        <h2>SyncMeet</h2>
+      </Link>
+
+      <div>
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+
+        <Link to="/register">
+          <button>Register</button>
+        </Link>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
